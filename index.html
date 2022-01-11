@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>O bingo do banana</title>
+ <link rel="icon" type="image/x-icon" href="cao_head.PNG">
+<style>
+table {
+  font-family: arial, sans-serif;
+
+  width: 70%;
+   margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+    width: 100%;
+    text-align:center;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+.container:before {
+  background: url(banana.jpg) no-repeat center center fixed; 
+
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+html {
+	overflow: hidden;
+}
+
+.green{
+    background-color:#00FF00;
+}
+.red{
+    background-color:#FF0000;
+}
+.gray{
+    background-color:#CCCCCC;
+}
+</style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+function tdclick(el){
+	if (el.style.backgroundColor === '')
+		el.style.backgroundColor = 'red';
+	else 
+		el.style.backgroundColor = '';
+};
+</script>
+</head>
+<body>
+
+<div class="container">
+<h2>O bingo do banana</h2>
+<table>
+  <h2>
+    <tr>
+          <td onclick="tdclick(this)">"Os Benfiquistas devem estar unidos"</td>
+          <td onclick="tdclick(this)">"Os resultados da auditoria sairão em breve"</td>
+          <td onclick="tdclick(this)">"Nunca assinei nada que pudesse prejudicar o Sport Lisboa e Benfica"</td>
+          <td onclick="tdclick(this)">"Agora é que vamos ver os homens que temos nesta casa"</td>
+          <td onclick="tdclick(this)">"Falta uma volta inteira, são 7 pontos mas nada está perdido"</td>
+          
+          
+    </tr>
+     <tr>
+		<td onclick="tdclick(this)">"Obviamente a época não está a correr como planeámos"</td>
+          <td onclick="tdclick(this)">"Tenho toda a confiança em DSO"</td>
+          <td onclick="tdclick(this)">"Tenho perfeita consciência que aquilo que foi feito até ao momento, não é o que estava idealizado"</td>
+          <td onclick="tdclick(this)">"Vamos assumir todos a responsabilidade, comigo à cabeça, daquilo que está a acontecer, neste momento"</td>
+          <td onclick="tdclick(this)">"Aqui nesta casa sabemos bem o caminho que queremos tomar"</td>
+           
+    </tr>
+    <tr>
+           <td onclick="tdclick(this)">"Porém ninguém está autorizado a mandar a toalha ao chão"</td>
+          <td onclick="tdclick(this)">"Agora é que se vai perceber quem tem responsabilidade para representar este grande clube, onde eu também me incluo."</td>
+          <td onclick="tdclick(this)">"Não estamos onde queremos estar"</td>
+          <td onclick="tdclick(this)">"Há muito ruido à volta do Benfica"</td>
+          <td onclick="tdclick(this)">"COVID"</td>
+
+    </tr>
+   
+    </table>
+	</div>
+</body>
+</html>
